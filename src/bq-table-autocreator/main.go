@@ -91,7 +91,7 @@ func main() {
 
 		if err != nil {
 			log.Println(err)
-			slackSend("Could not create table :here", err)
+			slackSend("Could not create table @here", err)
 		} else {
 			slackSend("Successfully created table", nil)
 		}
