@@ -1,0 +1,66 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/connectedventures/f8-pkg/configurator",
+			"repository": "https://github.com/connectedventures/f8-pkg",
+			"revision": "f9073bd3ccd55f3805a52fbab53c5ddc88b419df",
+			"branch": "master",
+			"path": "/configurator"
+		},
+		{
+			"importpath": "github.com/go-yaml/yaml",
+			"repository": "https://github.com/go-yaml/yaml",
+			"revision": "a83829b6f1293c91addabc89d0571c246397bbf4",
+			"branch": "v2"
+		},
+		{
+			"importpath": "golang.org/x/net/context",
+			"repository": "https://go.googlesource.com/net",
+			"revision": "154d9f9ea81208afed560f4cf27b4860c8ed1904",
+			"branch": "master",
+			"path": "/context"
+		},
+		{
+			"importpath": "golang.org/x/oauth2",
+			"repository": "https://go.googlesource.com/oauth2",
+			"revision": "71d9edd725fe4ce4c692fcb20765be558df45ad3",
+			"branch": "master"
+		},
+		{
+			"importpath": "google.golang.org/api/bigquery/v2",
+			"repository": "https://code.googlesource.com/google-api-go-client",
+			"revision": "63ade871fd3aec1225809d496e81ec91ab76ea29",
+			"branch": "master",
+			"path": "/bigquery/v2"
+		},
+		{
+			"importpath": "google.golang.org/api/gensupport",
+			"repository": "https://code.googlesource.com/google-api-go-client",
+			"revision": "63ade871fd3aec1225809d496e81ec91ab76ea29",
+			"branch": "master",
+			"path": "/gensupport"
+		},
+		{
+			"importpath": "google.golang.org/api/googleapi",
+			"repository": "https://code.googlesource.com/google-api-go-client",
+			"revision": "63ade871fd3aec1225809d496e81ec91ab76ea29",
+			"branch": "master",
+			"path": "/googleapi"
+		},
+		{
+			"importpath": "google.golang.org/cloud/compute/metadata",
+			"repository": "https://code.googlesource.com/gocloud",
+			"revision": "20e786f4db50de279a834da101b142620cfb2a41",
+			"branch": "master",
+			"path": "/compute/metadata"
+		},
+		{
+			"importpath": "google.golang.org/cloud/internal",
+			"repository": "https://code.googlesource.com/gocloud",
+			"revision": "20e786f4db50de279a834da101b142620cfb2a41",
+			"branch": "master",
+			"path": "/internal"
+		}
+	]
+}
