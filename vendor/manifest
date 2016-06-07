@@ -2,6 +2,12 @@
 	"version": 0,
 	"dependencies": [
 		{
+			"importpath": "github.com/ashwanthkumar/slack-go-webhook",
+			"repository": "https://github.com/ashwanthkumar/slack-go-webhook",
+			"revision": "8716eb370d7fc459f4ad13035cdfba3fe36fab30",
+			"branch": "master"
+		},
+		{
 			"importpath": "github.com/connectedventures/f8-pkg/configurator",
 			"repository": "https://github.com/connectedventures/f8-pkg",
 			"revision": "f9073bd3ccd55f3805a52fbab53c5ddc88b419df",
@@ -15,11 +21,30 @@
 			"branch": "v2"
 		},
 		{
+			"importpath": "github.com/moul/http2curl",
+			"repository": "https://github.com/moul/http2curl",
+			"revision": "b1479103caacaa39319f75e7f57fc545287fca0d",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/parnurzeal/gorequest",
+			"repository": "https://github.com/parnurzeal/gorequest",
+			"revision": "f17fef20c518e688f4edb3eb2af148462ecab3ef",
+			"branch": "develop"
+		},
+		{
 			"importpath": "golang.org/x/net/context",
 			"repository": "https://go.googlesource.com/net",
 			"revision": "154d9f9ea81208afed560f4cf27b4860c8ed1904",
 			"branch": "master",
 			"path": "/context"
+		},
+		{
+			"importpath": "golang.org/x/net/publicsuffix",
+			"repository": "https://go.googlesource.com/net",
+			"revision": "154d9f9ea81208afed560f4cf27b4860c8ed1904",
+			"branch": "master",
+			"path": "/publicsuffix"
 		},
 		{
 			"importpath": "golang.org/x/oauth2",
