@@ -1,5 +1,5 @@
 build:
-	gb build all
+	gb build
 
 run: build
-	./bin/bq-table-autocreator -c ./configs/config.yaml
+	./bin/bq-table-autocreator -c ./configs/default.yaml

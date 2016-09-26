@@ -51,14 +51,13 @@ func readSchema(project ProjectConfig) *bigquery.TableSchema {
 	return &schema
 }
 
-func slackSend(text string, err error) {
+func slackSend(project string, table *bigquery.Table, text string, err error) {
 	att := slack.Attachment{}
-	if err == nil {
-		att.AddField(slack.Field{Title: "Status", Value: "Success"})
-	} else {
-		att.AddField(slack.Field{Title: "Status", Value: "Failure"})
+	if err != nil {
 		att.AddField(slack.Field{Title: "Error", Value: err.Error()})
 	}
+	att.AddField(slack.Field{Title: "Table", Value: table.TableReference.TableId})
+	att.AddField(slack.Field{Title: "Project", Value: project})
 	payload := slack.Payload(text, config.Slack.Name,
 		"",
 		config.Slack.Channel,
@@ -91,9 +90,9 @@ func main() {
 
 		if err != nil {
 			log.Println(err)
-			slackSend("Could not create table @here", err)
+			slackSend(project.ProjectID, table, "Could not create table @here", err)
 		} else {
-			slackSend("Successfully created table", nil)
+			slackSend(project.ProjectID, table, "Successfully created table", nil)
 		}
 	}
 }
