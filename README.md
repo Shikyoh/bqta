@@ -10,7 +10,7 @@ function to query data partitioned by day.
 
 ## Usage
 ### Development
-[Download Go first](https://golang.org/dl/), then edit the configuration file
+Install [Go](https://golang.org/dl/) and [gb](https://getgb.io/) first, then edit the configuration file
 and schema in `./configs` and run this:
 ```sh
 make run
