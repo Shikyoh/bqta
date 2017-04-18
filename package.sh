@@ -7,6 +7,5 @@
 
 mkdebdir /usr/local/bin
 mkdebdir /etc/$NAME
-mkdebdir /etc/init
 
 cp ./bin/$NAME $DEB_DIR/usr/local/bin/$NAME

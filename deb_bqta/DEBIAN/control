@@ -1,6 +1,6 @@
-Package: bq-table-autocreator
+Package: bqta
 Architecture: amd64
 Maintainer: Lee Archer <lee@connected-ventures.com>
 Priority: optional
 Version: CI_VERSION
-Description: Create a BigQuery table for tomorrow (requires separate cron setup)
+Description: Create BigQuery tables and send Slack notifications on success/failure
