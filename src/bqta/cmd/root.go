@@ -62,6 +62,7 @@ var (
 			for _, proj := range config.Projects {
 				if proj.Name == createCmdName {
 					thisProject = &proj
+					break
 				}
 			}
 			if thisProject == nil {
