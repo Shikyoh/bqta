@@ -19,5 +19,5 @@ pipeline:
     commands:
       - apt update
       - apt install -y wget curl
-      - wget -qO- https://raw.githubusercontent.com/ConnectedVentures/f8-deb-helper/release/4.0/deb-jazz | VERSION=v4.0.5 bash
+      - wget -qO- https://raw.githubusercontent.com/ConnectedVentures/f8-deb-helper/release/4.0/deb-jazz | VERSION=v4.0.3 bash
 
