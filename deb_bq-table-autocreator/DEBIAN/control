@@ -1,6 +1,0 @@
-Package: bq-table-autocreator
-Architecture: amd64
-Maintainer: Lee Archer <lee@connected-ventures.com>
-Priority: optional
-Version: CI_VERSION
-Description: Create a BigQuery table for tomorrow (requires separate cron setup)

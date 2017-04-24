@@ -1,0 +1,19 @@
+slack:
+  name:             BigQuery Table Autocreator
+  channel:          "#my-test"
+  webhook:          "https://hooks.slack.com/services/x/y/z"
+
+projects:
+  - project_id:     test-project
+    name: data
+    bigquery:
+      dataset:      test-dataset
+      prefix:       events
+      schema_path:  ./configs/sample_schema.json
+
+  - project_id:     test-project
+    name: data2
+    bigquery:
+      dataset:      test-dataset2
+      prefix:       events
+      schema_path:  ./configs/sample_schema.json

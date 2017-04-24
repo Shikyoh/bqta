@@ -1,0 +1,23 @@
+workspace:
+   base: /go
+
+pipeline:
+  setup:
+    image: golang:1.8
+    commands:
+      - go get github.com/constabulary/gb/...
+
+  build:
+    image: golang:1.8
+    environment:
+      - GOPATH=/go
+    commands:
+      - make build
+
+  deploy:
+    image: phusion/baseimage
+    commands:
+      - apt update
+      - apt install -y wget curl
+      - wget -qO- https://raw.githubusercontent.com/ConnectedVentures/f8-deb-helper/release/4.0/deb-jazz | VERSION=v4.0.5 bash
+
